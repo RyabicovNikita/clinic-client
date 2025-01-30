@@ -18,7 +18,7 @@ export const loginUser = async (email, password, setCookie, token) =>
     headers: { "Content-Type": "application/json", Authorization: token },
   }).then((res) => {
     const token = res.headers.get("token");
-    if (token) setCookie("token", token, { path: "/", maxAge: 30 });
+    if (token) setCookie("token", token, { path: "/", maxAge: 300 });
     return res.json();
   });
 
