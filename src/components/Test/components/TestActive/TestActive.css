@@ -1,0 +1,6 @@
+.page-item {
+  cursor: pointer;
+}
+.list-group-item:hover {
+  background-color: rgba(207, 227, 250, 0.678);
+}
